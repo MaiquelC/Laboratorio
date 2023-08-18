@@ -1,3 +1,20 @@
+import calendar
+import math
+import locale
+
+import numpy as np
+import pandas as pd
+
+import matplotlib.colors as mcolors
+import matplotlib.dates as mdates
+import matplotlib.image as mpimg
+import matplotlib.pyplot as plt
+from matplotlib.ticker import MaxNLocator, AutoLocator
+
+import seaborn as sns
+
+from pylab import arange
+
 # Função que converte dados em micrograma para partícula por milhão.
 def ugm3_to_ppm(carbone):
     carbone_ppb = 1.88 * carbone
